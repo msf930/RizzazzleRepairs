@@ -1,0 +1,125 @@
+.image1{
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    filter: blur(1px);
+}
+.image1:hover{
+    filter: blur(0px);
+    
+}
+.image{
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    filter: blur(1px);
+}
+.image:hover{
+    filter: blur(0px);
+}
+.imageContainer {
+    position: relative;
+    background-color: white;
+    padding: 1rem;
+  }
+  .imageContainer .title {
+    position: absolute;
+    top: 10rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .imageContainer .body1{
+    position: absolute;
+    top: 30rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+  .imageContainer .body2{
+    position: absolute;
+    top: 50rem;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+.title{
+    color: black;
+    background-color:white;
+    border-radius: 10px;
+    padding: 2%;
+    opacity: .95;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border: solid;
+    border-color: #1b1369;
+}
+.title:hover{
+    opacity: 1;
+}
+.body1{
+    color: black;
+    background-color:white;
+    border-radius: 10px;
+    padding: 2%;
+    opacity: .95;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border: solid;
+    border-color: #1b1369;
+    
+}
+.body1:hover{
+    opacity: 1;
+}
+.body2{
+    color: black;
+    background-color:white;
+    border-radius: 10px;
+    padding: 2%;
+    opacity: .95;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    border: solid;
+    border-color: #1b1369;
+    
+}
+.body2:hover{
+    opacity: 1;
+}
+.text1{
+    padding-top: 2%;
+}
+@media (max-width: 575.98px) {
+    .imageContainer .title{
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    }
+    .title{
+        padding: 15%;
+    }
+    .imageContainer .body1{
+    position: absolute;
+    top: 50%;
+    left: 30%;
+    transform: translate(-20%, -50%);
+    text-align: center;
+    }
+
+    .imageContainer .body2{
+    position: absolute;
+    top: 80%;
+    left: 20%;
+    transform: translate(-15%, -50%);
+    text-align: center;
+    }
+    .image{
+        display: none;
+    }
+}
+@media (max-width: 769.98px) {
+    .image{
+        display: none;
+    }
+}
