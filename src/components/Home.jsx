@@ -10,7 +10,7 @@ function Home() {
       <div className= "imageContainer">
         <Container>
             <Row>
-                <Col md={4}>
+                <Col md={6} lg={4}>
                     <img
                       class="image1 img-fluid rounded mb-4 mb-lg-4"
                       src="https://live.staticflickr.com/65535/52694599732_de10801ba8_k.jpg"
@@ -27,29 +27,29 @@ function Home() {
                       alt=""
                     />
                 </Col>
-                <Col md={4}>
+                <Col md={6}lg={4}>
                     <img
-                      class="image img-fluid rounded mb-4 mb-lg-4"
+                      class="image2 img-fluid rounded mb-4 mb-lg-4"
                       src="https://live.staticflickr.com/65535/52695812678_34121070ba_c.jpg"
                       alt=""
                     />
                     <img
-                      class="image img-fluid rounded mb-4 mb-lg-4"
+                      class="image2 img-fluid rounded mb-4 mb-lg-4"
                       src="https://live.staticflickr.com/65535/52694807712_e7eb17b962_h.jpg"
                       alt=""
                     />
                     <img
-                      class="image img-fluid rounded mb-4 mb-lg-4"
+                      class="image2 img-fluid rounded mb-4 mb-lg-4"
                       src="https://live.staticflickr.com/65535/52695587699_0d099ad7b9_h.jpg"
                       alt=""
                     />
                     <img
-                      class="image img-fluid rounded mb-4 mb-lg-4"
+                      class="image2 img-fluid rounded mb-4 mb-lg-4"
                       src="https://live.staticflickr.com/65535/52695736130_cefbcf8e0a_h.jpg"
                       alt=""
                     />
                 </Col>
-                <Col md={4}>
+                <Col md={0}lg={4}>
                     <img
                       class="image img-fluid rounded mb-4 mb-lg-4"
                       src="https://live.staticflickr.com/65535/52695736390_101b804a7c_h.jpg"

@@ -13,6 +13,7 @@ import {
   Local
 } from "./components";
 import Repairs from "./components/Repairs";
+import Capabilies from "./components/Capabilities";
 
 ReactDOM.render(
   <Router>
@@ -23,6 +24,7 @@ ReactDOM.render(
       <Route path="/repairs" element={<Repairs />} />
       <Route path="/contact" element={<Contact />} />
       <Route path="/local" element={<Local />} />
+      <Route path="/capabilities" element={<Capabilies />} />
     </Routes>
     <Footer />
   </Router>,

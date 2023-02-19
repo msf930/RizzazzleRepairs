@@ -3,11 +3,12 @@ import { NavLink } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Image from 'react-bootstrap/Image'
 import Navbar from 'react-bootstrap/Navbar';
+import "./Navigation.css";
 
 function Navigation() {
   return (
     <div className="navigation">
-      <nav className="navbar navbar-expand navbar-light bg-light">
+      <nav className="navbar navbar-expand">
         <div className="container">
           <NavLink className="navbar-brand" to="/">
             <img
@@ -26,6 +27,12 @@ function Navigation() {
               <li className="nav-item">
                 <NavLink className="nav-link" to="/">
                   Home
+                  <span className="sr-only">(current)</span>
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/capabilities">
+                  Capabilities
                   <span className="sr-only">(current)</span>
                 </NavLink>
               </li>
