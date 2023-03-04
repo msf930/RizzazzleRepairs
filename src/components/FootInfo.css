@@ -1,0 +1,46 @@
+.body{
+    background-color:#072137;
+    overflow: hidden; 
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.column{
+    padding: 20px;
+    text-align: center;
+    width: 33%;
+}
+.spacer{
+    background-color:#072137;
+    height: 30px;
+    width: 100%;
+}
+.footHeader{
+    color: white;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.footContent{
+    color: white;
+    font-size: 15px;
+    text-decoration: none;
+}
+.linkText{
+    text-decoration: none;
+    list-style-type: none 
+}
+@media screen and (max-width: 576px){
+    .container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .column{
+        padding: 20px;
+        text-align: center;
+        width: 100%;
+    }
+}

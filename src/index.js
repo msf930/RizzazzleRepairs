@@ -26,7 +26,7 @@ ReactDOM.render(
       <Route path="/local" element={<Local />} />
       <Route path="/capabilities" element={<Capabilies />} />
     </Routes>
-    <Footer />
+    {/* <Footer /> */}
   </Router>,
 
   document.getElementById("root")

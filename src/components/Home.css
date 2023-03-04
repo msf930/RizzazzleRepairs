@@ -1,164 +1,215 @@
-.image1{
-    transition-duration: .5s;
-    transition-timing-function: ease;
-    filter: blur(1px);
+.home{
+    background-color: #ffffff;
 }
-.image1:hover{
-    filter: blur(0px);
+.container1{
+    position: relative;
+    text-align: center;
+}
+
+.titleContainer{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color:white;
+  padding: 2%;
+  width: 80%;
     
 }
-.image{
-    transition-duration: .5s;
-    transition-timing-function: ease;
-    filter: blur(1px);
+.image1{
+    width: 100%;
 }
-.image:hover{
-    filter: blur(0px);
-}
-.image2{
-    transition-duration: .5s;
-    transition-timing-function: ease;
-    filter: blur(1px);
-}
-.image2:hover{
-    filter: blur(0px);
-}
-.imageContainer {
-    position: relative;
-    background-color: lightgrey;
-    padding: 1rem;
-  }
-  .imageContainer .title {
-    position: absolute;
-    top: 10rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .imageContainer .body1{
-    position: absolute;
-    top: 30rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
-  .imageContainer .body2{
-    position: absolute;
-    top: 50rem;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-  }
 .title{
     color: black;
-    background-color:white;
-    border-radius: 10px;
-    padding: 2%;
-    opacity: .95;
-    transition-duration: .5s;
-    transition-timing-function: ease;
-    border: solid;
-    border-color: #1b1369;
+    font-size: 50px;
+    font-style: normal;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
 }
-.title:hover{
-    opacity: 1;
+
+
+.subTitle{
+    color: black;
+    display: contents;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif ;
+
 }
+
+
+@media screen and (max-width: 576px) {
+    .subTitle{
+        display: none;
+    }
+    .title{
+        font-size: 20px;
+    }
+    .titleContainer{
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color:white;
+        padding: 2%;
+        width: 60%;
+          
+      }
+    
+}
+
 .body1{
     color: black;
     background-color:white;
     border-radius: 10px;
-    padding: 2%;
-    opacity: .95;
+    padding: 100px 50px;
     transition-duration: .5s;
     transition-timing-function: ease;
-    border: solid;
-    border-color: #1b1369;
     
 }
-.body1:hover{
-    opacity: 1;
+.card{
+    text-align: center;
+    border: none;
+    border-radius: 0%;
 }
+.header1{
+    padding-bottom: 40px;
+}
+.text1{
+    padding-bottom: 40px;
+}
+.btn{
+    background-color: #1b1369;
+    color: white;
+    border-radius: 0%;
+}
+@media screen and (max-width: 576px){
+    .card{
+        padding: 20px 0px;
+    }
+    .header1{
+        padding-bottom: 20px;
+    }
+    .text1{
+        padding-bottom: 20px;
+    }
+}
+.image2{
+    opacity: 15%;
+    width: 100%;
+}
+.container2{
+    position: relative;
+    text-align: center;
+    display: flex; 
+    overflow: hidden;
+}
+.container2Text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 2%;
+    width: 80%;
+}
+.header2{
+    padding-bottom: 40px;
+}
+.header3{
+    padding-bottom: 40px;
+}
+.text2{
+    padding-bottom: 40px;
+}
+
 .body2{
+    width: 100%;
+    padding: 10%;
+    text-align: center;
     color: black;
     background-color:white;
-    border-radius: 10px;
-    padding: 2%;
-    opacity: .95;
-    transition-duration: .5s;
-    transition-timing-function: ease;
-    border: solid;
-    border-color: #1b1369;
-    
 }
-.body2:hover{
-    opacity: 1;
-}
+
 .text1{
     padding-top: 2%;
 }
-@media (max-width: 991px) {
-    .imageContainer .title{
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+
+@media screen and (max-width: 576px){
+    .image2{
+        height: 250px;
     }
-    .title{
+    .container2{
+        position: relative;
+        text-align: center;
+    }
+    .container2Text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         padding: 2%;
+        width: 80%;
     }
-    .imageContainer .body1{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    .header2{
+        padding-bottom: 20px;
+        font-size: small;
     }
-
-    .imageContainer .body2{
-    position: absolute;
-    top: 80%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+    .header3{
+        padding-bottom: 20px;
+        font-size: small;
     }
-    .image{
-        display: none;
+    .text2{
+        padding-bottom: 20px;
+        font-size: small;
     }
 
 }
-@media (max-width: 769.98px) {
-    .image{
-        display: none;
-    }
+/* LOGO CONTAINER */
+.container3{
+    background-color: white;
+    padding-top: 150px;
+    text-align: center;
+    padding-bottom: 150px;
 }
-@media (max-width: 575.98px) {
-    .imageContainer .title{
-    position: absolute;
-    top: 15%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
+.clientTitle{
+    padding: 100px;
+}
+.logoContainer{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.clientImage{
+    width: auto; 
+    height: 150px;
+    margin: 40px;
+}
+
+@media screen and (max-width: 576px){
+    .container3{
+        background-color: white;
+        padding-top: 50px;
+        text-align: center;
+        padding-bottom: 50px;
     }
-    .title{
-        padding: 15%;
+    .clientTitle{
+        padding: 50px;
     }
-    .imageContainer .body1{
-    position: absolute;
-    top: 50%;
-    left: 30%;
-    transform: translate(-20%, -50%);
-    text-align: center;
+    .clientImage{
+        width: auto; 
+        height: 100px;
+        margin: 20px;
     }
 
-    .imageContainer .body2{
-    position: absolute;
-    top: 80%;
-    left: 20%;
-    transform: translate(-15%, -50%);
-    text-align: center;
-    }
-    .image ,.image2{
-        display: none;
-    }
+}
+/* TESTIMONIALS CONTAINER */
+
+.container4{
+   /* overflow: hidden; */
+   background-color: whitesmoke;
+   padding-top: 100px;
+   padding-bottom: 100px;
+   text-align: center;
+}
+
+.formContainer{
+    display: flex;
+    justify-content: center;
 }

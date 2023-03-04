@@ -1,0 +1,18 @@
+.testimonialCard{
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+}
+
+.testimonialBody{
+  padding: 30px;
+}
+
+.testimonialTitle{
+  padding: 10px;
+}
+
+.testimonialName{
+  padding: 10px;
+}

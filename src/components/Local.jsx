@@ -1,9 +1,14 @@
 import React from "react";
+import ContactUs from "./ContactUs"
+import FootInfo from "./FootInfo"
+import GoToTop from './GoToTop'
+import "./Services.css";
 
 function Local() {
   return (
     <div className="local">
       <div class="container">
+            <h1>FREE LOCAL DELIVERY!</h1>
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
             <img
@@ -13,16 +18,19 @@ function Local() {
             />
           </div>
           <div class="col-lg-5">
-            <h1 class="font-weight-light">Free Local Delivery</h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.
-            </p>
+            <h5>
+              Free delivery for local customers.  Contact us to see if you qualify!
+            </h5>
           </div>
         </div>
       </div>
+      <div className="formContainer">
+        <ContactUs/>
+      </div>
+      <div>
+        <FootInfo/>
+      </div>
+      <GoToTop />
     </div>
   );
 }

@@ -1,0 +1,43 @@
+.Container{
+    width: 100%;
+    padding: 10vh 20vw;
+    background-color:#0C3C60;
+}
+.header{
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.label{
+    color: white;
+}
+.formContainer{
+    display: flex;
+    justify-content: center;
+}
+.contactDetail{
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+.detailHeader{
+    padding: 20px;
+}
+
+@media screen and (max-width: 576px){
+    .Container{
+        width: 100%;
+        padding: 10vh 10vw;
+        background-color:#0C3C60;
+    }
+    .contactDetail{
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: white;
+    }
+}
