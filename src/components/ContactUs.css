@@ -27,6 +27,10 @@
     padding: 20px;
 }
 
+.contactLink:link{
+    color: white;
+    text-decoration: none;
+}
 @media screen and (max-width: 576px){
     .Container{
         width: 100%;
@@ -34,6 +38,7 @@
         background-color:#0C3C60;
     }
     .contactDetail{
+        margin-top: 30px;
         padding: 10px;
         display: flex;
         flex-direction: column;

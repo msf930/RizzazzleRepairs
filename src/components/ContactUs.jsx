@@ -1,18 +1,25 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./ContactUs.css";
 
+
+const notify = () => {
+    toast('Message Sent Thank You!');
+}
 export const ContactUs = () => {
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // emailjs.sendForm('service_34u54md', 'template_x4u169o', form.current, 'OrGGIygZKaLVjpwFL')
+    //emailjs.sendForm('service_34u54md', 'template_x4u169o', form.current, 'OrGGIygZKaLVjpwFL')
     emailjs.sendForm('service_7cv2l8g', 'template_5glnib7', form.current, 'MJrmYgAVI4c3zqyoi')
       .then((result) => {
           console.log(result.text);
           e.target.reset();
+          notify();
       }, (error) => {
           console.log(error.text);
       });
@@ -54,9 +61,13 @@ export const ContactUs = () => {
         </form>
         <div className='contactDetail'>
             <h3 className='detailHeader'>Or Contact Us Directly</h3>
-            <h4 className='detailContent'> Phone: 719-287-0745 </h4>
-            <h4 className='detailContent'> Email: RizzazzleRepairs@gmail.com</h4>
+            <p>Phone: <a className="contactLink" href="tel:7192870745">719-287-0745</a></p>
+            <p>Email: <a className="contactLink" href="mailto:RizzazzleRepairs@gmail.com">RizzazzleRepairs@gmail.com</a></p>
+
+            {/* <h4 className='detailContent'> Phone: 719-287-0745 </h4>
+            <h4 className='detailContent'> Email: RizzazzleRepairs@gmail.com</h4> */}
         </div>
+        <ToastContainer/>
     </div>
   );
 };

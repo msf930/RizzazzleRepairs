@@ -2,13 +2,18 @@ import React from "react";
 import ContactUs from "./ContactUs"
 import FootInfo from "./FootInfo"
 import GoToTop from './GoToTop'
+import { Fade } from "react-awesome-reveal";
 import "./Services.css";
 
 function Local() {
   return (
     <div className="local">
       <div class="container">
-            <h1>FREE LOCAL DELIVERY!</h1>
+      <Fade triggerOnce="true" duration="1500" delay="0">
+            <h1 className="serviceTitle">FREE LOCAL DELIVERY</h1>
+      </Fade>
+      <Fade triggerOnce="true" duration="1500" delay="20">
+        <div>
         <div class="row align-items-center my-5">
           <div class="col-lg-7">
             <img
@@ -19,10 +24,12 @@ function Local() {
           </div>
           <div class="col-lg-5">
             <h5>
-              Free delivery for local customers.  Contact us to see if you qualify!
+            Take advantage of free local delivery! <br></br><br></br>As a thank you to our local customers, any equipment that has been repaired at our shop will be delivered to you free of charge.  <br></br><br></br>Contact us to see if you qualify!
             </h5>
           </div>
         </div>
+        </div>
+      </Fade>
       </div>
       <div className="formContainer">
         <ContactUs/>

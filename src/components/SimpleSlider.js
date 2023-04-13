@@ -19,7 +19,7 @@ export default class SimpleSlider extends Component {
     };
     return (
       <div>
-        <h2> TESTIMONIALS</h2>
+        <h2 className="sliderTitle"> TESTIMONIALS</h2>
         <Slider {...settings}>
           <div className="testimonialCard">
             <h3 className="testimonialBody">

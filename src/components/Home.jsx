@@ -6,6 +6,7 @@ import SimpleSlider from "./SimpleSlider"
 import ContactUs from "./ContactUs"
 import FootInfo from "./FootInfo"
 import GoToTop from './GoToTop'
+import { Fade } from "react-awesome-reveal";
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import "./Home.css";
@@ -19,6 +20,7 @@ function Home() {
              src="https://live.staticflickr.com/65535/52701627778_1dca647ad6_k.jpg"
              alt=""
            />
+           <Fade triggerOnce="true" duration="1500" delay="10">
            <div className="titleContainer">
             <h2 className="subTitle" > Installation and Repair Service</h2>
             <h1 className="title" > RIZZAZZLE REPAIRS</h1>
@@ -27,11 +29,13 @@ function Home() {
               <span className="sr-only">(current)</span>
             </NavLink>
            </div>
+           </Fade>
         </div>
         <div class="container" className="body1">
           <Row>
             <Col sm={12} lg={4}>
               <div class="card">
+              <Fade triggerOnce="true" duration="1500" delay="20">
                 <div class="card-body">
                   <h2 className="header1">OUR CAPABILITIES</h2>
                   <h5 className="text1">Our small team of dedicated technicians is here for you! Let us take on the task of installing any and all audio-visual equipment you can imagine! <br></br> <br></br>
@@ -41,10 +45,12 @@ function Home() {
                     <span className="sr-only">(current)</span>
                   </NavLink>
                 </div>
+              </Fade>
               </div>
             </Col>
             <Col sm={12} lg={4}>
               <div class="card">
+              <Fade triggerOnce="true" duration="1500" delay="30">
                 <div class="card-body">
                   <h2 className="header1">INSTALLATIONS</h2>
                   <h5 className="text1">Comprehensive installation services <br></br> <br></br> Everything from design, deployment, and management of single installations to company wide rollouts</h5>
@@ -53,10 +59,12 @@ function Home() {
                     <span className="sr-only">(current)</span>
                   </NavLink>
                 </div>
+              </Fade>
               </div>
             </Col>
             <Col sm={12} lg={4}>
               <div class="card">
+              <Fade triggerOnce="true" duration="1500"delay="40">
                 <div class="card-body">
                   <h2 className="header1">REPAIRS</h2>
                   <h5 className="text1">Expansive knowledge of varied systems ranging from appliances to electronic instruments. </h5>
@@ -65,6 +73,7 @@ function Home() {
                     <span className="sr-only">(current)</span>
                   </NavLink>
                 </div>
+              </Fade>
               </div>
             </Col>
           </Row>
@@ -78,18 +87,24 @@ function Home() {
              alt=""
            />
           <div className="container2Text">
+          <Fade triggerOnce="true" duration="1500">
             <h2 className="header2">ABOUT US</h2>
-            <h2 className="header3">We keep our eye on the details</h2>
-            <h5 className="text2">You can rest easy knowing we have every detail covered! 
+            <h2 className="header3">We keep our eye on the details.</h2>
+            <h5 className="text2">With a humble start repairing digital keyboards for local Denver folks, we have grown in experience to take on national jobs for million-dollar companies. 
             Let our expert team obsess over every step of the process so you don’t have to! 
-            Our team works tirelessly to ensure your project is executed efficiently and on time!</h5>
+            We work tirelessly to ensure your project is executed efficiently and without hassle! 
+            Worry less knowing that our professional team is here for you.</h5>
+          </Fade>
 
           </div>
         </div>
         {/* CLIENTS */}
         <div className="container3">
-          <h2 className="clientTitle">OUR CLIENTS</h2>
+        <Fade triggerOnce="true" duration="1500">
+          <h2 className="clientTitle">SOME OF OUR CLIENTS</h2>
+        </Fade>
           <div className="logoContainer">
+          <Fade triggerOnce="true" duration="1500" delay="10">
             <img
                className="clientImage"
                class="clientImage mb-12 mb-lg-12"
@@ -98,6 +113,8 @@ function Home() {
                height="130"
                alt=""
              />
+          </Fade>
+          <Fade triggerOnce="true" duration="1500" delay="20">
             <img
                className="clientImage"
                class="clientImage mb-12 mb-lg-12"
@@ -106,6 +123,8 @@ function Home() {
                height="100"
                alt=""
              />
+          </Fade>
+          <Fade triggerOnce="true" duration="1500" delay="30">
             <img
                className="clientImage"
                class="clientImage mb-12 mb-lg-12"
@@ -114,6 +133,8 @@ function Home() {
                height="100"
                alt=""
              />
+          </Fade>
+          <Fade triggerOnce="true" duration="1500" delay="40">
             <img
                className="clientImage"
                class="clientImage mb-12 mb-lg-12"
@@ -122,12 +143,15 @@ function Home() {
                height="100"
                alt=""
              />
+          </Fade>
           </div>
         </div>
         {/* TESTIMONIALS */}
+        <Fade triggerOnce="true" duration="1500">
         <div className="container4">
           <SimpleSlider/>
         </div>
+        </Fade>
         <div className="formContainer">
           <ContactUs/>
         </div>

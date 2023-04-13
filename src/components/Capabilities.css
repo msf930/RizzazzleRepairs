@@ -4,3 +4,15 @@
     padding: 15px;
     
 }
+.body1{
+    color: black;
+    background-color:white;
+    border-radius: 10px;
+    padding: 100px 50px;
+    transition-duration: .5s;
+    transition-timing-function: ease;
+    
+}
+.capabilitiesTitle{
+    color: #1b1369;
+}

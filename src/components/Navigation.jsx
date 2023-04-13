@@ -7,7 +7,10 @@ import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import Button from 'react-bootstrap/Button';
+import Mailto from "./Mailto";
 import "./Navigation.css";
+
+
 
 function Navigation() {
   return (
