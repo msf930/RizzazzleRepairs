@@ -1,13 +1,10 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import NavDropdown from 'react-bootstrap/NavDropdown';
-import Image from 'react-bootstrap/Image'
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Button from 'react-bootstrap/Button';
-import Mailto from "./Mailto";
 import "./Navigation.css";
 
 
